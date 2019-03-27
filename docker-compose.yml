@@ -1,0 +1,13 @@
+version: '3'
+services:
+    minio:
+      image: minio/minio
+      ports:
+        - 9000:9000
+      volumes:
+        - ./data/minio/data:/export
+        - ./data/minio/config:/root/.minio
+      environment:
+        MINIO_ACCESS_KEY: hogehoge
+        MINIO_SECRET_KEY: hogehoge
+      command: server /export
