@@ -1,6 +1,6 @@
 astroid==2.0.4
 certifi==2019.3.9
-Django==2.1.2
+Django==2.2.10
 django-filter==2.0.0
 djangorestframework==3.8.2
 isort==4.3.4
